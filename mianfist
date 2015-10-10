@@ -1,0 +1,15 @@
+'This code will be applied to the manifest file during compilation.
+'You do not need to modify it in most cases.
+'See this link for for more information: http://www.basic4ppc.com/forum/showthread.php?p=78136
+AddManifestText(
+<uses-sdk android:minSdkVersion="11" android:targetSdkVersion="22"/>
+<supports-screens android:largeScreens="true"
+    android:normalScreens="true"
+    android:smallScreens="true"
+    android:anyDensity="true"/>)
+SetApplicationAttribute(android:icon, "@drawable/icon")
+SetApplicationAttribute(android:label, "$LABEL$")
+'End of default text.
+
+SetApplicationAttribute(android:theme, "@style/MyAppTheme")
+'SetApplicationAttribute(android:theme, "@style/Theme.AppCompat")
